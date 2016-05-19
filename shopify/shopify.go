@@ -45,8 +45,6 @@ type Shopify struct {
 	Products []Product
 }
 
-var tokens = []string{"f04c38b0b44ba72d222034452ce723ff"}
-
 // NewClient inits shopify client
 func NewClient(domain string, secrettoken string, publicURL string) Shopify {
 	shop := Shopify{shopifyDomain: domain, shopifySecretToken: secrettoken, shopifyPublicURL: publicURL}
